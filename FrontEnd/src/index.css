@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+
+@layer base {
+  :root {
+    color-scheme: light;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.5;
+
+    --color-primary: #18181B;
+    --color-contrast: #EAB308;
+    --color-primary-dark: #000000;
+    --color-background: #FAFAFA;
+    --color-surface: #FFFFFF;
+    --color-text: #18181B;
+    --color-secondary-text: #71717A;
+    --color-border: #E4E4E7;
+    --color-accent: #EAB308;
+    --color-success: #16A34A;
+    --color-sale: #EF4444;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+  }
+}
+
+/* Custom CSS Utility Classes using declared variables */
+.bg-theme-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-theme-primary-dark {
+  background-color: var(--color-primary-dark);
+}
+
+.bg-theme-contrast {
+  background-color: var(--color-contrast);
+}
+
+.bg-theme-background {
+  background-color: var(--color-background);
+}
+
+.bg-theme-surface {
+  background-color: var(--color-surface);
+}
+
+.bg-theme-accent {
+  background-color: var(--color-accent);
+}
+
+.bg-theme-success {
+  background-color: var(--color-success);
+}
+
+.bg-theme-sale {
+  background-color: var(--color-sale);
+}
+
+.text-theme-primary {
+  color: var(--color-primary);
+}
+
+.text-theme-contrast {
+  color: var(--color-contrast);
+}
+
+.text-theme-main {
+  color: var(--color-text);
+}
+
+.text-theme-secondary {
+  color: var(--color-secondary-text);
+}
+
+.text-theme-accent {
+  color: var(--color-accent);
+}
+
+.text-theme-success {
+  color: var(--color-success);
+}
+
+.text-theme-sale {
+  color: var(--color-sale);
+}
+
+.border-theme-border {
+  border-color: var(--color-border);
+}
+
+.border-theme-contrast {
+  border-color: var(--color-contrast);
+}
+
+.border-theme-accent {
+  border-color: var(--color-accent);
+}
+
+.border-theme-sale {
+  border-color: var(--color-sale);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

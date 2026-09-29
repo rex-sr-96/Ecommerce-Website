@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Add any custom admin styling here */
+body {
+  background-color: #f3f4f6;
+}
